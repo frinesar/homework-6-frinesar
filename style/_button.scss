@@ -1,0 +1,64 @@
+.button {
+
+    line-height: 24px;
+    transition: all ease-in-out .2s;
+
+    @mixin default {
+        padding: 16px 32px;
+        font-size: 20px;
+        border-radius: 28px;
+        font-weight: 400;
+        transition: all ease-in-out .2s;
+    }
+
+    &:hover {
+        box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    }
+
+
+    &_download {
+        @include default;
+        color: black;
+        svg {
+            margin-right: 8px;
+        }
+    }
+
+    &_open-in-browser {
+        @include default;
+        color: #ffffff;
+    }
+
+    &_login {
+        border-radius: 48px;
+        padding: 7px 16px;
+        color: $black-text-color;
+        background-color: #ffffff;
+    }
+
+
+    &_white {
+        background-color: #ffffff;
+    }
+
+    &_white:hover {
+        color: $blue-text-color;
+    }
+
+
+    &_black {
+        background-color: $black-button-color;
+        color: #ffffff;
+    }
+    &_black:hover {
+        background-color: $light-black-button-color;
+    }
+
+    &_blue {
+        color: #ffffff;
+        background-color: $blue-button-color;
+    }
+    &_blue:hover {
+        background-color: $light-blue-button-color;
+    }
+}
