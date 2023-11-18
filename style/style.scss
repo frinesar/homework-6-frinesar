@@ -54,7 +54,14 @@
     background: #404EED url("../header-background.svg") center / cover;
     overflow-x: hidden;
 
+    .container {
+        position: relative;
+        z-index: 10;
+    }
+
     .header {
+        position: relative;
+        z-index: 10;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -66,6 +73,10 @@
                 color: #ffffff;
                 margin: 10px;
                 padding: 10px;
+            }
+
+            &__item:hover {
+                text-decoration: underline;
             }
         }
     
@@ -121,6 +132,7 @@
         height: 100%;
         top: 0;
         left: 0;
+        z-index: 1;
 
 
         .image {

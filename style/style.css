@@ -116,7 +116,13 @@ a {
   background: #404EED url("../header-background.svg") center/cover;
   overflow-x: hidden;
 }
+.opening .container {
+  position: relative;
+  z-index: 10;
+}
 .opening .header {
+  position: relative;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,6 +133,9 @@ a {
   color: #ffffff;
   margin: 10px;
   padding: 10px;
+}
+.opening .header .nav-menu__item:hover {
+  text-decoration: underline;
 }
 .opening .header .icon-logo {
   width: 124px;
@@ -169,6 +178,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 .opening .images .image {
   position: absolute;
